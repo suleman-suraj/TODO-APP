@@ -12,7 +12,7 @@ body{
 }
 header{
     max-width: 500px;
-    margin: auto;
+    margin: 0 auto;
 }
 .logo-wrap{
     padding-top: 20px;
@@ -47,4 +47,92 @@ header{
     background-color: whitesmoke;
     border-radius: 5px;
     box-shadow: 0 0 2px black;
+}
+.todo-add > input{
+    width: 75%;
+padding: 3px;
+color: #0da7de;
+}
+
+.todo-add > button{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: #0da7de;
+    color: whitesmoke;
+    width: 25%;
+}
+.todo-add > button:active{
+    background-color: #0da7de;
+}
+
+main{
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 10px 0;
+}
+main h2{
+    color: #ff9600;
+    text-align: center;
+}
+
+main ul{
+    margin-top: 30px;
+    list-style: none;
+}
+
+#modal{
+    background-color: #ff9600;
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    display: none;
+    padding: 30px;
+}
+
+#modal .modal-box{
+    background-color: #0da7de;
+    display: flex;
+    flex-direction: column;
+    padding: 0 30px;
+    margin: auto;
+    width: 500px;
+    height: 50px;
+    border-radius: 5px;
+    box-shadow: 0 0 2px gray;
+}
+
+#modal span{
+    width: 10%;
+    color: gray;
+    text-align: center;
+    font-size: 50px;
+    right: 0;
+}
+
+#modal .sign-in{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+#modal .sign-in *{
+    font-size: 22px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    background-color: transparent;
+    width: 95%;
+    margin: 10 auto;
+}
+
+#modal .sign-in button:active{
+    background-color: #ff9500c0;
+
 }
