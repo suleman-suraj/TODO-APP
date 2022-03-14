@@ -79,6 +79,59 @@ main ul{
     margin-top: 30px;
     list-style: none;
 }
+main ul li{
+    background-color: #0da7de;
+    border-radius: 3px;
+    box-shadow: 0 0 5px gray;
+    display: flex;
+    flex-direction: column;
+    padding: 5px 10px;
+    margin: 15px 0;
+    justify-content: space-between;
+}
+main .todo{
+    width: 100%;
+}
+main .btns{
+    width: auto;
+    display: flex;
+    padding: 5px 0;
+    justify-items: center;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+main ul li button{
+    margin-left: 5px;
+    width: 65px;
+    max-height: 30px;
+    outline: none;
+    border: none;
+    text-align: center;
+    border-radius: 3px;
+    color: #ff9600;
+    box-shadow: 0 1.5px gray;
+    transition: color 0.5s ease-in-out;
+
+}
+main ul li button:active{
+    background-color: #ff9600;
+}
+main .edit-mode{
+    outline: none;
+    border: none;
+    width: 100%;
+    background-color: whitesmoke;
+    border-radius: 3px;
+    color: #0da7de;
+    padding: 0 5px;
+}
+main .save{
+    margin: 0 20px;
+
+}
+.hide{
+    display: none;
+}
 
 #modal{
     background-color: #ff9600;
